@@ -1,0 +1,429 @@
+/*box sizing*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*clearfix*/
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+ul{
+	list-style: none;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+/****html and body***/
+html, body{
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	height: 100%;
+	}
+
+/****container***/
+
+.container{
+	width: 100%;
+	max-width: 1300px;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+header{
+	width: 100%;
+	max-width: 1300px;
+	position: fixed;
+	background-color: #fff;
+	top:0;
+	z-index: 200;
+	text-align: center;
+}
+
+header img.logo{
+	width: 12%;
+	padding:1%;
+	margin: 0 auto;
+}
+
+/****************************home****************************/
+
+section.home{
+	max-height: 650px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.home img{
+	width: 100%;
+	position: relative;
+	bottom: -50px;
+}
+
+/****************************loosies****************************/
+.loosies{
+	margin-top: 5%;
+}
+
+.loosies h1
+,.framework h1{
+	float:left;
+	display: inline-block;
+	width: 30%;
+	text-align: left;
+	font-size: 5.5em;
+	line-height: 1em;
+	font-weight: 300;
+	margin:0;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.loosies ul{
+	display: inline-block;
+	width: 50%;
+	margin-left: 7.5%;
+}
+
+.loosies ul li{
+	display: inline-block;
+}
+
+.loosies ul li:first-child{
+	float:left;
+}
+.loosies ul li:last-child{
+	float:right
+}
+
+/****************************framework****************************/
+section.framework{
+	text-align: center;
+	margin-top:5%;
+	margin-bottom:5%; 
+}
+
+.framework iframe{
+	margin-top: 1%;
+	float:left;
+	margin-left: 7.5%;
+	width: 50%;
+}
+
+/****************************gallery****************************/
+
+section.gallery ul{
+	width: 100%;
+	padding:0;
+	background: url(../img/tablebgd.png) repeat fixed;
+}
+
+section.gallery ul li{
+	float:left;
+	vertical-align: top;
+}
+
+section.gallery ul li article img{
+	width: 100%;
+}
+
+section.gallery ul li.brick{
+	width: 60%;
+}
+
+section.gallery ul li.frameworkad{
+	width: 40%;
+	position: relative;
+	top:100px;
+}
+
+section.gallery ul li.frameworkad article{
+	width: 100%;
+	background-color: #fff;
+}
+
+section.gallery ul li.frameworkad article img{
+	padding: 17%;	
+	min-height: 480px;
+}
+
+section.gallery ul li:nth-of-type(3) 
+,section.gallery ul li:nth-of-type(4) 
+,section.gallery ul li:nth-of-type(5) {
+	width:33%;
+	margin-top: 8%;
+}
+
+section.gallery ul li:nth-of-type(3) img
+,section.gallery ul li:nth-of-type(4) img
+,section.gallery ul li:nth-of-type(5) img{
+	min-height: 400px;
+	max-height: 400px;
+}
+
+section.gallery ul li.lillies{
+	position: relative;
+	z-index: 5;
+}
+
+section.gallery ul li.atmosa{
+	position: relative;
+	width: 34%;
+	z-index: 5;
+}
+
+section.gallery ul li.logocircle {
+	width: 50%;
+	background-color: #fff;
+}
+
+section.gallery ul li.napes{
+	width: 50%;
+	margin-top: 5%;
+}
+
+section.gallery ul li.graffiti {
+	display: block;
+	width: 100%;
+	max-width: 1400px;
+	min-height:525px;
+	background: url(../img/atmosvideo1.png)no-repeat center center fixed;
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+section.gallery ul li.atmosface {
+	display: block;
+	width: 100%;
+	max-width: 1400px;
+	min-height:525px;
+	background: url(../img/atmosstraightup.jpg)no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+section.gallery ul li.max{
+	width: 35%;
+	margin-top: 0.5%;
+}
+
+section.gallery ul li.elevator{
+	margin-top: 3%;
+	width: 64.5%;
+	margin-left:0.5%;
+	float:right;
+}
+
+section.gallery ul li.pink{
+	width: 39.5%;
+	margin-right: 0.5%;
+}
+
+section.gallery ul li.openmic{
+	width: 60%;
+}
+
+section.gallery ul li.blurry{
+	position: relative;
+	z-index: 4;
+	width: 39%;
+	margin-left: 1%;
+	margin-top: 0.5%;
+}
+
+section.gallery ul li.musicvideo{
+	width: 60%;
+	margin-top: 0.5%;
+}
+
+section.gallery ul li.musicvideo article iframe{
+	width: 100%;
+}
+
+section.gallery ul li.arms{
+	width: 35%;
+}
+
+/****************************footer****************************/
+footer{
+	width:100%;
+	padding-top: 1%;
+	background-color: #fff;
+	position: fixed;
+	bottom:0;
+	z-index: 5;
+	text-align: center;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-right: 2.5%;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+/****************************media queries****************************/
+
+@media screen and (max-width:1200px){
+	header img.logo{
+		width: 15%;
+		margin: 0 auto;
+	}
+
+	.loosies h1,
+	.framework h1{
+		width: 25%;
+		font-size: 4em;
+	}
+
+	.loosies li{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:940px){
+	section.gallery ul li:nth-of-type(3) img
+	,section.gallery ul li:nth-of-type(4) img
+	,section.gallery ul li:nth-of-type(5) img{
+		min-height: 300px;
+		max-height: 300px;
+	}
+
+	.loosies h1,
+	.framework h1{
+		width: 25%;
+		font-size: 3em;
+	}	
+
+	section.gallery ul li.frameworkad{
+		display: none;
+	}
+
+	section.gallery ul li.brick{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:740px){
+
+	header img.logo{
+		width: 25%;
+		margin:0;
+		padding-top: 3%;
+	}
+
+	.loosies h1,
+	.framework h1{
+		float: none;
+		display:block;
+		width: 100%;
+		margin:0;
+		margin-top:3%;
+		margin-bottom: 3%;
+		text-align: center;
+	}
+
+	.loosies ul{
+		width: 100%;
+		margin:1%;
+	}
+
+	.loosies ul li{
+		margin:0;
+	}
+
+	.loosies li iframe{
+		height: 200px;
+	}
+
+	.framework iframe{
+		width: 100%;
+		margin:0;
+	}
+}
+
+@media screen and (max-width:640px){
+	section.gallery ul li:nth-of-type(3)
+	,section.gallery ul li:nth-of-type(4)
+	,section.gallery ul li:nth-of-type(5){
+		width: 50%;
+		display: block;
+	}
+
+	section.gallery ul li:nth-of-type(3) img
+	,section.gallery ul li:nth-of-type(4) img
+	,section.gallery ul li:nth-of-type(5) img{
+		min-height:150px;
+		height: auto;
+	}
+
+	section.gallery ul li.max{
+		display: none;
+	}
+
+	section.gallery ul li.pink
+	,section.gallery ul li.napes
+	,section.gallery ul li.elevator
+	,section.gallery ul li.openmic
+	,section.gallery ul li.musicvideo
+	,section.gallery ul li.blurry{
+		width: 100%;
+		float:none;
+		margin:0;
+		margin-bottom: 3%;
+		display: block;
+	}
+
+	section.gallery ul li.atmosface
+	,section.gallery ul li.graffiti {
+		min-height: 300px;
+		background-attachment: scroll;
+		background-size: 100% 20em;
+		-webkit-background-size: 100% 20em;
+	}
+}
+
+@media screen and (max-width:480px){
+	section.gallery ul li.graffiti{
+		min-height: 350px;
+		background-color: #fff;
+	}
+
+	section.gallery ul li.atmosface{
+		min-height: 250px;
+	}
+	
+	section.gallery ul li.graffiti 
+	,section.gallery ul li.atmosface{
+		background-attachment: scroll;
+		background-size: 100% 20em;
+		-webkit-background-size: 100% 12em;
+	}
+}
