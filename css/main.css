@@ -60,6 +60,7 @@ header img.logo{
 	width: 12%;
 	padding:1%;
 	margin: 0 auto;
+	margin-left: 4%;
 }
 
 /****************************home****************************/
@@ -69,6 +70,7 @@ section.home{
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
 }
 
 .home img{
@@ -106,11 +108,8 @@ section.home{
 	display: inline-block;
 }
 
-.loosies ul li:first-child{
-	float:left;
-}
-.loosies ul li:last-child{
-	float:right
+.loosies ul li:nth-of-type(2){
+	float:right;
 }
 
 /****************************framework****************************/
@@ -146,57 +145,42 @@ section.gallery ul li article img{
 
 section.gallery ul li.brick{
 	width: 60%;
+	position: relative;
+	top:-60px;
 }
 
 section.gallery ul li.frameworkad{
 	width: 40%;
-	position: relative;
-	top:100px;
 }
 
 section.gallery ul li.frameworkad article{
 	width: 100%;
 	background-color: #fff;
+	position: relative;
+	top:23px;
 }
 
 section.gallery ul li.frameworkad article img{
 	padding: 17%;	
-	min-height: 480px;
 }
 
-section.gallery ul li:nth-of-type(3) 
-,section.gallery ul li:nth-of-type(4) 
-,section.gallery ul li:nth-of-type(5) {
-	width:33%;
-	margin-top: 8%;
-}
-
-section.gallery ul li:nth-of-type(3) img
-,section.gallery ul li:nth-of-type(4) img
-,section.gallery ul li:nth-of-type(5) img{
-	min-height: 400px;
-	max-height: 400px;
-}
-
-section.gallery ul li.lillies{
-	position: relative;
-	z-index: 5;
-}
-
-section.gallery ul li.atmosa{
-	position: relative;
-	width: 34%;
-	z-index: 5;
-}
 
 section.gallery ul li.logocircle {
 	width: 50%;
+	margin-top: 3%;
 	background-color: #fff;
 }
 
 section.gallery ul li.napes{
 	width: 50%;
-	margin-top: 5%;
+	margin-bottom: 3%;
+	position: relative;
+	top:-10px;
+	z-index: 5;
+}
+
+section.gallery ul li.napes img{
+	max-height: 600px;
 }
 
 section.gallery ul li.graffiti {
@@ -223,21 +207,42 @@ section.gallery ul li.atmosface {
 	-o-background-size: cover;
 }
 
+section.gallery ul li:nth-of-type(7) 
+,section.gallery ul li:nth-of-type(8) 
+,section.gallery ul li:nth-of-type(9) {
+	width:33%;
+}
+
+section.gallery ul li:nth-of-type(7) img
+,section.gallery ul li:nth-of-type(8) img
+,section.gallery ul li:nth-of-type(9) img{
+	min-height: 410px;
+	max-height: 410px;
+}
+
 section.gallery ul li.max{
 	width: 35%;
-	margin-top: 0.5%;
+	margin:0;
+}
+
+section.gallery ul li.lillies{
+	margin-top: 5%;
+	position: relative;
+	top:5px;
+	z-index: 5;
+}
+
+section.gallery ul li.atmosa{
+	width: 34%;
 }
 
 section.gallery ul li.elevator{
-	margin-top: 3%;
-	width: 64.5%;
-	margin-left:0.5%;
-	float:right;
+	width: 65%;
+	margin:0;
 }
 
 section.gallery ul li.pink{
-	width: 39.5%;
-	margin-right: 0.5%;
+	width: 40%;
 }
 
 section.gallery ul li.openmic{
@@ -277,6 +282,7 @@ footer{
 }
 
 footer ul{
+	margin-left: 3%;
 	list-style: none;
 }
 
@@ -293,8 +299,7 @@ footer ul li:last-child{
 
 @media screen and (max-width:1200px){
 	header img.logo{
-		width: 15%;
-		margin: 0 auto;
+		width: 14%;
 	}
 
 	.loosies h1,
@@ -306,15 +311,16 @@ footer ul li:last-child{
 	.loosies li{
 		width: 45%;
 	}
+
+		section.gallery ul li:nth-of-type(7) img
+	,section.gallery ul li:nth-of-type(8) img
+	,section.gallery ul li:nth-of-type(9) img{
+		min-height: 290px;
+		max-height: 290px;
+	}
 }
 
 @media screen and (max-width:940px){
-	section.gallery ul li:nth-of-type(3) img
-	,section.gallery ul li:nth-of-type(4) img
-	,section.gallery ul li:nth-of-type(5) img{
-		min-height: 300px;
-		max-height: 300px;
-	}
 
 	.loosies h1,
 	.framework h1{
@@ -324,18 +330,18 @@ footer ul li:last-child{
 
 	section.gallery ul li.frameworkad{
 		display: none;
-	}
+		}
 
 	section.gallery ul li.brick{
 		width: 100%;
+		position: static;
 	}
 }
 
 @media screen and (max-width:740px){
 
 	header img.logo{
-		width: 25%;
-		margin:0;
+		width: 20%;
 		padding-top: 3%;
 	}
 
@@ -352,15 +358,20 @@ footer ul li:last-child{
 
 	.loosies ul{
 		width: 100%;
-		margin:1%;
+		margin:2%;
 	}
 
-	.loosies ul li{
-		margin:0;
+	.loosies ul li:first-child{
+		margin-bottom: 3%;
+	}
+
+	.loosies ul li:nth-of-type(2){
+		float:none;
+		margin-left: 4%;
 	}
 
 	.loosies li iframe{
-		height: 200px;
+		height: 150px;
 	}
 
 	.framework iframe{
@@ -370,17 +381,15 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:640px){
-	section.gallery ul li:nth-of-type(3)
-	,section.gallery ul li:nth-of-type(4)
-	,section.gallery ul li:nth-of-type(5){
-		width: 50%;
-		display: block;
+
+	header img.logo{
+		width: 25%;
 	}
 
-	section.gallery ul li:nth-of-type(3) img
-	,section.gallery ul li:nth-of-type(4) img
-	,section.gallery ul li:nth-of-type(5) img{
-		min-height:150px;
+	section.gallery ul li:nth-of-type(7) img
+	,section.gallery ul li:nth-of-type(8) img
+	,section.gallery ul li:nth-of-type(9) img{
+		min-height:220px;
 		height: auto;
 	}
 
@@ -389,7 +398,6 @@ footer ul li:last-child{
 	}
 
 	section.gallery ul li.pink
-	,section.gallery ul li.napes
 	,section.gallery ul li.elevator
 	,section.gallery ul li.openmic
 	,section.gallery ul li.musicvideo
@@ -405,8 +413,9 @@ footer ul li:last-child{
 	,section.gallery ul li.graffiti {
 		min-height: 300px;
 		background-attachment: scroll;
-		background-size: 100% 20em;
-		-webkit-background-size: 100% 20em;
+		-webkit-background-size: 100% 17em;
+		-moz-background-size: 100% 17em;
+		background-size: 100% 17em;
 	}
 }
 
@@ -417,13 +426,27 @@ footer ul li:last-child{
 	}
 
 	section.gallery ul li.atmosface{
-		min-height: 250px;
+		min-height: 225px;
 	}
 	
 	section.gallery ul li.graffiti 
 	,section.gallery ul li.atmosface{
 		background-attachment: scroll;
-		background-size: 100% 20em;
-		-webkit-background-size: 100% 12em;
+		-webkit-background-size: 100% 12.5em;
+		-moz-background-size: 100% 12.5em;
+		background-size: 100% 12.5em;
 	}
+
+	section.gallery ul li.atmosa,
+	section.gallery ul li.lyrics{
+		float:right;
+		width: 50%;
+	}
+
+	section.gallery ul li.lillies{
+		display: block;
+		top:-10px;
+		left:40px;
+		width: 80%;
+		}
 }
