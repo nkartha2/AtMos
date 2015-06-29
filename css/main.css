@@ -292,6 +292,10 @@ footer ul li{
 	margin-right: 2.5%;
 }
 
+footer ul li:hover{
+	color:#ff5500;
+}
+
 footer ul li:last-child{
 	margin-right: 0;
 }
