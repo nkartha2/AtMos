@@ -292,7 +292,7 @@ footer ul li{
 	margin-right: 2.5%;
 }
 
-footer ul li:hover{
+footer ul li:hover a{
 	color:#ccc;
 }
 
