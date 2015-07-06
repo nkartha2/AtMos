@@ -293,7 +293,11 @@ footer ul li{
 }
 
 footer ul li:hover{
+<<<<<<< HEAD
 	color:#ccc;
+=======
+	color:#ff5500;
+>>>>>>> master
 }
 
 footer ul li:last-child{
