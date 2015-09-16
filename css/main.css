@@ -57,10 +57,51 @@ header{
 }
 
 header img.logo{
-	width: 12%;
+	width: 11%;
 	padding:1%;
 	margin: 0 auto;
-	margin-left: 4%;
+	margin-left: 5%;
+}
+
+nav{
+	float: right;
+	position: relative;
+	top:20px;
+	right:10px;
+}
+
+nav button{
+	background-color: #fff;
+	border:none;
+}
+
+nav span{
+	display: block;
+	width: 19px;
+	height: 2px;
+	margin: 4px 0;
+	border-radius: 10px;
+	background-color: #000;
+	z-index: 99999;
+	cursor: pointer;
+}
+
+nav ul{
+	display: none;
+	position: absolute;
+	top:12px;
+	right:5px;
+	background-color: #fff;
+	width: 100px;
+}
+
+nav ul li{
+	text-transform: uppercase;
+	padding:5%;
+}
+
+ul li:hover{
+	color:#ccc;
 }
 
 /****************************home****************************/
@@ -86,16 +127,11 @@ section.home{
 
 .loosies h1
 ,.framework h1{
-	/*float:left;
-	display: inline-block;
-	width: 30%;
-	text-align: left;*/
 	text-align:center;
 	text-transform: uppercase;
 	font-size: 3.5em;
 	line-height: 1em;
 	font-weight: 300;
-/*	margin:0;*/
 	margin-left: 3%;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -106,13 +142,10 @@ section.home{
 	width: 100%;
 	margin:0 auto;
 	text-align: center;
-	/*width: 50%;*/
-	/*margin-left: 7.5%;*/
 }
 
 .loosies ul li{
 	display: inline-block;
-	/*margin-right: 7%;*/
 	width: 33%;
 }
 
@@ -128,9 +161,6 @@ section.framework{
 }
 
 .framework iframe{
-/*	margin-top: 1%;
-	float:left;
-	margin-left: 7.5%;*/
 	text-align: center;
 	width: 50%;
 }
@@ -140,7 +170,7 @@ section.framework{
 section.gallery ul{
 	width: 100%;
 	padding:0;
-	background: url(../img/tablebgd.png) repeat fixed;
+	background: url(../img/tablebgd.png) repeat repeat fixed;
 }
 
 section.gallery ul li{
@@ -229,11 +259,6 @@ section.gallery ul li:nth-of-type(7) img
 	max-height: 410px;
 }
 
-section.gallery ul li.max{
-	width: 35%;
-	margin:0;
-}
-
 section.gallery ul li.lillies{
 	margin-top: 5%;
 	position: relative;
@@ -245,38 +270,78 @@ section.gallery ul li.atmosa{
 	width: 34%;
 }
 
-section.gallery ul li.elevator{
-	width: 65%;
+section.gallery ul li.max{
+	width: 35%;
 	margin:0;
 }
 
-section.gallery ul li.pink{
-	width: 40%;
-}
-
 section.gallery ul li.openmic{
-	width: 60%;
+	width: 65%;
 }
 
-section.gallery ul li.blurry{
+section.gallery ul li.logoanim{
+	background-color: #fff;
+	text-align: center;
+	padding:20%;
+}
+
+.logoanim svg{
+	width:100%;
+}
+
+.path {
+  stroke-dasharray: 250;
+  -webkit-animation: atmos 10s linear forwards infinite;
+  -moz-animation: atmos 10s linear forwards infinite;
+  -o-animation: atmos 10s linear forwards infinite;
+ animation: atmos 10s linear forwards infinite;
+}
+
+@-webkit-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@-moz-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@-o-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+section.gallery ul li.logoanim
+{
+	max-height: 300px;
+}
+
+section.gallery ul li.logoanim
+,section.gallery ul li.blurry
+,section.gallery ul li.stripe
+,section.gallery ul li.pink
+,section.gallery ul li.chicago{
 	position: relative;
 	z-index: 4;
-	width: 39%;
-	margin-left: 1%;
-	margin-top: 0.5%;
+	width: 50%;
 }
 
 section.gallery ul li.musicvideo{
-	width: 60%;
-	margin-top: 0.5%;
+	width: 50%;
 }
 
 section.gallery ul li.musicvideo article iframe{
 	width: 100%;
-}
-
-section.gallery ul li.arms{
-	width: 35%;
 }
 
 /****************************footer****************************/
@@ -301,8 +366,8 @@ footer ul li{
 	margin-right: 2.5%;
 }
 
-footer ul li:hover{
-	color:#ff5500;
+footer ul li:hover i{
+	color:#ccc;
 }
 
 footer ul li:last-child{
@@ -391,6 +456,15 @@ footer ul li:last-child{
 		width: 100%;
 		margin:0;
 	}
+
+	section.gallery ul li.logoanim{
+		width: 100%;
+	}
+
+	.logoanim svg{
+		width: 35%;
+	}
+
 }
 
 @media screen and (max-width:640px){
@@ -403,6 +477,10 @@ footer ul li:last-child{
 		width: 100%;
 	}
 
+	.loosies ul li iframe{
+		height:450px;
+	}
+
 	section.gallery ul li:nth-of-type(7) img
 	,section.gallery ul li:nth-of-type(8) img
 	,section.gallery ul li:nth-of-type(9) img{
@@ -410,7 +488,9 @@ footer ul li:last-child{
 		height: auto;
 	}
 
-	section.gallery ul li.max{
+	section.gallery ul li.max
+	,section.gallery ul li.stripe
+	,section.gallery ul li.logoanim{
 		display: none;
 	}
 
