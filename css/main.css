@@ -252,35 +252,28 @@ section.gallery ul li.openmic{
 }
 
 
-
-section.gallery ul li.yellow{
-	width: 50%;
-	margin:0;
-	float:left;
+section.gallery ul li.yellow
+{
+	max-height: 300px;
 }
 
-section.gallery ul li.blurry
+section.gallery ul li.yellow
+,section.gallery ul li.blurry
 ,section.gallery ul li.stripe
 ,section.gallery ul li.pink
 ,section.gallery ul li.chicago{
 	position: relative;
 	z-index: 4;
 	width: 50%;
-	float:left;
-	/*margin-left: 1%;*/
-	/*margin-top: 0.5%;*/
 }
 
 section.gallery ul li.musicvideo{
 	width: 50%;
-	/*margin-bottom: 5%;*/
-	/*float:left;*/
 }
 
 section.gallery ul li.musicvideo article iframe{
 	width: 100%;
 }
-
 
 /****************************footer****************************/
 footer{
