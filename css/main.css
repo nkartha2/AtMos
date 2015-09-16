@@ -63,6 +63,47 @@ header img.logo{
 	margin-left: 5%;
 }
 
+nav{
+	float: right;
+	position: relative;
+	top:25px;
+	right:10px;
+}
+
+nav button{
+	background-color: #fff;
+	border:none;
+}
+
+nav span{
+	display: block;
+	width: 19px;
+	height: 2px;
+	margin: 4px 0;
+	border-radius: 10px;
+	background-color: #000;
+	z-index: 99999;
+	cursor: pointer;
+}
+
+nav ul{
+	display: none;
+	position: absolute;
+	top:28px;
+	right:5px;
+	background-color: #fff;
+	width: 100px;
+}
+
+nav ul li{
+	text-transform: uppercase;
+	padding:5%;
+}
+
+ul li:hover{
+	color:#ccc;
+}
+
 /****************************home****************************/
 
 section.home{

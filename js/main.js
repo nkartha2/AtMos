@@ -13,20 +13,39 @@ $(document).ready(function(){
   }
   
   preload(
-    "../img/atmosbrick.jpg",
-	"../img/atmosfmwkad.jpg",
-	"..img/atmoslillies.jpg",
-	"..img/atmosa.jpg",
+    "../img/atmosa.jpg",
+	"../img/atmosblurry.jpg",
+	"..img/atmosbrick.jpg",
+	"..img/atmoselevator.jpg",
 	"..img/writingonthewall.jpg",
-	"..img/atmoslogocircle1.jpg",
-	"..img/atmosnapes.jpg",
+	"..img/atmosfmwkad.jpg",
+	"..img/atmoshero.jpg",
 	"..img/atmosmax.jpg",
-	"..img/atmoselevator.png",
+	"..img/atmosnapes.png",
 	"..img/atmospinkperformance.jpg",
-	"..img/atmosblurry.jpg",
+	"..img/atmospinkopenarms.jpg",
+	"..img/logo.png",
+	"../img/stripevideo.jpg",
 	"../img/tablebgd.png",
-	"../img/atmosvideo1.png",
-	"../img/atmosstraightup.jpg"
+	"../img/chicago.jpg",
+	"../img/atmoslogocircle1.jpg"
   );
+
+  ////navigation animation 
+	$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 500);
+    return false;
+	});
+
+///navigation menu 
+
+	$('header nav ul').css('display','none');
+      		$('nav button').off("click");
+      		$('nav button').click(function(){
+				$('nav ul').slideToggle('slow');
+			});
+
 
 });
