@@ -57,10 +57,10 @@ header{
 }
 
 header img.logo{
-	width: 12%;
+	width: 11%;
 	padding:1%;
 	margin: 0 auto;
-	margin-left: 4%;
+	margin-left: 5%;
 }
 
 /****************************home****************************/
@@ -140,7 +140,7 @@ section.framework{
 section.gallery ul{
 	width: 100%;
 	padding:0;
-	background: url(../img/tablebgd.png) repeat fixed;
+	background: url(../img/tablebgd.png) repeat repeat fixed;
 }
 
 section.gallery ul li{
@@ -246,12 +246,13 @@ section.gallery ul li.atmosa{
 }
 
 section.gallery ul li.elevator{
-	width: 65%;
+	width: 60%;
 	margin:0;
 }
 
 section.gallery ul li.pink{
 	width: 40%;
+	/*float:left;*/
 }
 
 section.gallery ul li.openmic{
@@ -262,13 +263,14 @@ section.gallery ul li.blurry{
 	position: relative;
 	z-index: 4;
 	width: 39%;
+	float:left;
 	margin-left: 1%;
 	margin-top: 0.5%;
 }
 
 section.gallery ul li.musicvideo{
 	width: 60%;
-	margin-top: 0.5%;
+	float:left;
 }
 
 section.gallery ul li.musicvideo article iframe{
@@ -301,7 +303,7 @@ footer ul li{
 	margin-right: 2.5%;
 }
 
-footer ul li:hover{
+footer ul li:hover i{
 	color:#ccc;
 }
 
