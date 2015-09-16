@@ -460,6 +460,11 @@ footer ul li:last-child{
 	section.gallery ul li.logoanim{
 		width: 100%;
 	}
+
+	.logoanim svg{
+		width: 60%;
+	}
+
 }
 
 @media screen and (max-width:640px){
