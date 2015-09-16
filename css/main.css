@@ -261,7 +261,8 @@ section.gallery ul li.yellow{
 
 section.gallery ul li.blurry
 ,section.gallery ul li.stripe
-,section.gallery ul li.pink{
+,section.gallery ul li.pink
+,section.gallery ul li.chicago{
 	position: relative;
 	z-index: 4;
 	width: 50%;
@@ -271,7 +272,7 @@ section.gallery ul li.blurry
 }
 
 section.gallery ul li.musicvideo{
-	width: 65%;
+	width: 50%;
 	/*margin-bottom: 5%;*/
 	/*float:left;*/
 }
