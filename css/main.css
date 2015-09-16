@@ -252,11 +252,11 @@ section.gallery ul li.openmic{
 section.gallery ul li.logoanim{
 	background-color: #fff;
 	text-align: center;
-	padding:15%;
+	padding:20%;
 }
 
 .logoanim svg{
-	width:60%;
+	width:100%;
 }
 
 .path {
@@ -290,10 +290,6 @@ section.gallery ul li.logoanim{
     stroke-dashoffset: 1000;
   }
 }
-
-/*section.gallery ul li.blurry{
-	max-height: 400px;
-}*/
 
 section.gallery ul li.logoanim
 {
